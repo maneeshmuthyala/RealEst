@@ -1,114 +1,176 @@
-.img{
-  height: 330px;
-  width: 600px;
+/* General layout */
+.app-container {
+  display: flex;
+  background-color: #000;
+  color: #fff;
+  height: 100vh;
+  font-family: Arial, sans-serif;
 }
-.pro-cont{
+
+.sidebar {
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #121212;
+}
+
+.icon {
+  font-size: 24px;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.feed {
+  flex: 1;
+  padding: 20px;
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+  overflow-y: scroll;
+}
+
+.post-box {
+  background: #222;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 100%;
+  background: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  resize: none;
+  height: 60px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  background: #1d9bf0;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.post-container {
+  background: #333;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.pro-cont {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 10px;
 }
-.pro-pic{
+
+.pro-pic {
   height: 40px;
   width: 40px;
-  border-radius: 30px;
+  border-radius: 50%;
   background-color: #234f;
   display: flex;
   justify-content: center;
+  align-items: center;
   font-size: 19px;
-  margin: 10px;
+  margin-right: 10px;
 }
-.app-container {
-    display: flex;
-    background-color: #000;
-    color: #fff;
-    height: 100vh;
-  }
-  
-  .sidebar {
-    width: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 0;
-    background-color: #121212;
-  }
-  
-  .icon {
-    font-size: 24px;
-    margin: 20px 0;
-    cursor: pointer;
-  }
-  
-  .feed {
-    flex: 1;
-    padding: 20px;
-    border-left: 1px solid #333;
-    border-right: 1px solid #333;
-    overflow-y: scroll;
-  }
-  
-  .post-box {
-    background: #222;
-    padding: 15px;
-    border-radius: 10px;
-  }
-  
-  textarea {
-    width: 100%;
-    background: transparent;
-    color: white;
-    border: none;
-    outline: none;
-    resize: none;
-    height: 60px;
-  }
-  
-  button {
-    background: #1d9bf0;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 20px;
-    cursor: pointer;
-  }
-  
-  .ad {
-    background: #333;
-    margin-top: 20px;
-    padding: 15px;
-    text-align: center;
-  }
-  
-  .right-sidebar {
-    width: 300px;
-    padding: 20px;
-    background: #121212;
-  }
-  
-  .subscribe {
-    width: 100%;
-    background: #1d9bf0;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 20px;
-    cursor: pointer;
-    margin-bottom: 20px;
-  }
-  
-  .trends {
-    background: #222;
-    padding: 15px;
-    border-radius: 10px;
-  }
-  
-  .trends h3 {
-    margin-bottom: 10px;
-  }
-  
-  .hide-icon {
-    font-size: 24px;
-    margin-top: 20px;
-    cursor: pointer;
-  }
-  
+
+.pro-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.pro-time {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.img {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.description {
+  font-size: 14px;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+.interaction-section {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.like-share {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  width: 25%;
+}
+
+.like-share .icon {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.comment-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.comment-box textarea {
+  width: 30%;
+  background: transparent;
+  color: white;
+  border: 1px solid #444;
+  border-radius: 5px;
+  padding: 10px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.comment-btn {
+  background: #1d9bf0;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 15%;
+}
+
+.right-sidebar {
+  width: 300px;
+  padding: 20px;
+  background: #121212;
+}
+
+.trends {
+  background: #222;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.trends h3 {
+  margin-bottom: 10px;
+}
+
+.trends p {
+  font-size: 14px;
+  color: #bbb;
+}
